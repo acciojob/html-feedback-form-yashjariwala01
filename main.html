@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <h1>Feedback Form</h1>
+    <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" minlength="3" maxlength="50" required>
+        <br>
+        <label for="portfolio">Portfolio</label>
+        <input type="url"  name="portfolio" id="portfolio" required>
+        <br>
+        <label for="favColor">favourite color</label>
+        <input type="color" name="favColor" id="favColor">
+        <br>
+        <label for="likeness">score your likeness(0-100)</label>
+        <input type="range" name="likeness" id="likeness" min="1" max="100">
+        <br>
+        <input type="submit" name="submit" value="submit">
+        <button type="reset">reset</button>
+    </form>
 </body>
-
 </html>
